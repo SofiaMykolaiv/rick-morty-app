@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorAccent">#03A9F4</color>
 
     <color name="black">#000000</color>
     <color name="black_semi_transparent">#B2000000</color>
@@ -17,8 +17,8 @@
     <color name="spindrift">#089485</color>
 
     <!--  Bottom navigation:  -->
-    <color name="color_bottom_nav_icon_active">#089485</color>
+    <color name="color_bottom_nav_icon_active">#6200EE</color>
     <color name="color_bottom_nav_icon_inactive">#CFCFCF</color>
-    <color name="color_bottom_nav_text_active">#089485</color>
+    <color name="color_bottom_nav_text_active">#6200EE</color>
     <color name="color_bottom_nav_text_inactive">#CFCFCF</color>
 </resources>
