@@ -28,7 +28,6 @@
             android:id="@+id/character_image"
             android:layout_width="@dimen/image_size_item_character"
             android:layout_height="@dimen/image_size_item_character"
-            android:src="@drawable/pics_test"
             tools:ignore="ContentDescription"
             tools:scaleType="center"
             tools:src="@tools:sample/backgrounds/scenic" />
