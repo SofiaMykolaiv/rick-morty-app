@@ -20,5 +20,7 @@
 
     <string name="message_empty_data_swipe_refresh">There no data.\nSwipe to refresh.</string>
 
-
+    <string name="last_known_location">Last known location:</string>
+    <string name="gender">Gender:</string>
+    <string name="model">%1$s - %2$s</string>
 </resources>
