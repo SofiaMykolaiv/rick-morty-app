@@ -17,7 +17,12 @@
         android:id="@+id/search_fragment"
         android:name="com.example.rick_morty_app.presentation.fragment.SearchFragment"
         android:label="@string/header_search"
-        tools:layout="@layout/fragment_search" />
+        tools:layout="@layout/fragment_search">
+
+        <action
+            android:id="@+id/action_search_to_show_result_fragment"
+            app:destination="@+id/show_result_fragment" />
+    </fragment>
 
     <!--  FavouriteFragment  -->
     <fragment
@@ -25,4 +30,11 @@
         android:name="com.example.rick_morty_app.presentation.fragment.FavouriteFragment"
         android:label="@string/header_favorites"
         tools:layout="@layout/fragment_favourite" />
+
+    <!--  ShowResultFragment  -->
+    <fragment
+        android:id="@+id/show_result_fragment"
+        android:name="com.example.rick_morty_app.presentation.fragment.ShowResultFragment"
+        android:label="@string/header_show_result"
+        tools:layout="@layout/fragment_show_result" />
 </navigation>

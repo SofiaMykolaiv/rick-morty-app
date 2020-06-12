@@ -19,7 +19,7 @@ class HomeViewModel : BaseViewModel() {
         try {
             loadingLiveData.postValue(true)
             val baseCharacterResponse = homeRepository.loadCharacterListNetwork()
-            characterLiveData.postValue(mapResponseToModel(baseCharacterResponse.characterResponse))
+            characterLiveData.postValue(mapResponseToModel(baseCharacterResponse.characterListResponse))
         } catch (e: Exception) {
             errorMessageLiveData.postValue(e.message)
         } finally {
