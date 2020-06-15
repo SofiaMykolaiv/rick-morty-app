@@ -10,4 +10,5 @@ val viewModelModule = module {
     viewModel { FavouriteViewModel() }
     viewModel { ShowResultViewModel() }
     viewModel { LocationViewModel() }
+    viewModel { EpisodeViewModel() }
 }
