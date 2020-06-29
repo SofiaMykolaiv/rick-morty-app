@@ -5,4 +5,5 @@ import org.koin.dsl.module
 
 val daoModule = module {
     single { get<AppDatabase>().characterDao() }
+    single { get<AppDatabase>().locationDao() }
 }

@@ -1,7 +1,9 @@
 package com.example.rick_morty_app.data.network.retrofit.service
 
 import com.example.rick_morty_app.data.network.response.BaseCharacterResponse
+import com.example.rick_morty_app.data.network.response.CharacterResponse
 import retrofit2.http.GET
+import retrofit2.http.Path
 import retrofit2.http.Query
 
 interface CharacterService {
@@ -17,4 +19,9 @@ interface CharacterService {
         @Query("type") type: String,
         @Query("gender") gender: String
     ): BaseCharacterResponse
+
+    @GET("/api/character/{id}")
+    suspend fun loadSingleCharacter(
+        @Path("id") id: Int
+    ) : CharacterResponse
 }

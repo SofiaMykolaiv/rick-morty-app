@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/spacing_default">
+
+    <ImageView
+        android:id="@+id/character_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/image_size_250dp"
+        tools:ignore="ContentDescription"
+        tools:scaleType="centerInside"
+        tools:src="@tools:sample/backgrounds/scenic" />
+
+    <TextView
+        android:id="@+id/character_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_default"
+        tools:text="Name: Taras Koloshmatin" />
+
+    <TextView
+        android:id="@+id/character_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_quarter"
+        tools:text="Status: Alive " />
+
+    <TextView
+        android:id="@+id/character_species"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_quarter"
+        tools:text="Species: Human" />
+
+    <TextView
+        android:id="@+id/character_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_quarter"
+        tools:text="Type: Apple" />
+
+    <TextView
+        android:id="@+id/character_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_quarter"
+        tools:text="Gender: Male" />
+
+    <TextView
+        android:id="@+id/character_origin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_quarter"
+        tools:text="Origin: Earth" />
+
+    <TextView
+        android:id="@+id/character_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_quarter"
+        tools:text="Location:" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_default"
+        tools:text="name: Earth"
+        android:id="@+id/character_location_name"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_default"
+        tools:text="type: Space station"
+        android:id="@+id/character_location_type"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_default"
+        tools:text="dimension: Unknown"
+        android:id="@+id/character_location_dimension"/>
+
+    <TextView
+        android:id="@+id/character_created"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_quarter"
+        tools:text="Created: 2017-11-10T12:56:36.618Z" />
+</LinearLayout>

@@ -10,7 +10,12 @@
         android:id="@+id/home_fragment"
         android:name="com.example.rick_morty_app.presentation.fragment.HomeFragment"
         android:label="@string/header_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_home_to_character_details_fragment"
+            app:destination="@+id/character_details_fragment" />
+    </fragment>
 
     <!--  SearchFragment  -->
     <fragment
@@ -37,4 +42,11 @@
         android:name="com.example.rick_morty_app.presentation.fragment.ShowResultFragment"
         android:label="@string/header_show_result"
         tools:layout="@layout/fragment_show_result" />
+
+    <!--  CharacterDetailsFragment  -->
+    <fragment
+        android:id="@+id/character_details_fragment"
+        android:name="com.example.rick_morty_app.presentation.fragment.CharacterDetailsFragment"
+        android:label="@string/header_character_details"
+        tools:layout="@layout/fragment_character_details" />
 </navigation>

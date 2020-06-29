@@ -11,4 +11,5 @@ val viewModelModule = module {
     viewModel { ShowResultViewModel() }
     viewModel { LocationViewModel() }
     viewModel { EpisodeViewModel() }
+    viewModel { CharacterDetailsViewModel() }
 }

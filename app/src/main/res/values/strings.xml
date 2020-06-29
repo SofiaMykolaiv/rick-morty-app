@@ -11,6 +11,7 @@
     <string name="header_search">Search</string>
     <string name="header_favorites">Favorites</string>
     <string name="header_show_result">Show result</string>
+    <string name="header_character_details">Character details</string>
 
     <string name="show_result">Show result</string>
 
@@ -20,16 +21,31 @@
     <string name="gender">Gender:</string>
     <string name="model">%1$s - %2$s</string>
 
+    <!--  Character details:  -->
+    <string name="character_name">Name: %1$s</string>
+    <string name="character_status">Status: %1$s</string>
+    <string name="character_species">Species: %1$s</string>
+    <string name="character_type">Type: %1$s</string>
+    <string name="character_gender">Gender: %1$s</string>
+    <string name="character_origin">Origin: %1$s</string>
+    <string name="character_location_name">Name: %1$s</string>
+    <string name="character_location_type">Type: %1$s</string>
+    <string name="character_location_dimension">Dimension: %1$s</string>
+
+    <string name="character_episode_list">Episode: %1$s</string>
+    <string name="character_created">Created: %1$s</string>
+
     <string name="hint_name">Enter name</string>
     <string name="hint_status">Enter status</string>
     <string name="hint_species">Enter species</string>
     <string name="hint_type">Enter type</string>
     <string name="hint_gender">Enter gender</string>
 
-    <!--  Arguments  -->
+    <!--  Arguments:  -->
     <string name="arg_name">arg_name</string>
     <string name="arg_status">arg_status</string>
     <string name="arg_species">arg_species</string>
     <string name="arg_type">arg_type</string>
     <string name="arg_gender">arg_gender</string>
+    <string name="arg_id">arg_id</string>
 </resources>

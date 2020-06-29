@@ -56,6 +56,8 @@ class HomeFragment : BaseFragment<HomeViewModel>(), CharacterClickListener {
     }
 
     override fun onItemClick(characterModel: CharacterModel) {
-
+        val arguments = Bundle()
+        arguments.putInt(getString(R.string.arg_id), characterModel.id!!)
+        navigateSafe(R.id.action_home_to_character_details_fragment, arguments)
     }
 }
