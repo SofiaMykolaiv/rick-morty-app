@@ -34,14 +34,24 @@
         android:id="@+id/favourite_fragment"
         android:name="com.example.rick_morty_app.presentation.fragment.FavouriteFragment"
         android:label="@string/header_favorites"
-        tools:layout="@layout/fragment_favourite" />
+        tools:layout="@layout/fragment_favourite">
+
+        <action
+            android:id="@+id/action_favourite_to_character_details_fragment"
+            app:destination="@id/character_details_fragment" />
+    </fragment>
 
     <!--  ShowResultFragment  -->
     <fragment
         android:id="@+id/show_result_fragment"
         android:name="com.example.rick_morty_app.presentation.fragment.ShowResultFragment"
         android:label="@string/header_show_result"
-        tools:layout="@layout/fragment_show_result" />
+        tools:layout="@layout/fragment_show_result">
+
+        <action
+            android:id="@+id/action_show_result_to_character_details_fragment"
+            app:destination="@id/character_details_fragment" />
+    </fragment>
 
     <!--  CharacterDetailsFragment  -->
     <fragment

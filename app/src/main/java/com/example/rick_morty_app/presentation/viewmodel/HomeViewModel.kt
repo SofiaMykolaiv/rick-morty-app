@@ -2,6 +2,7 @@ package com.example.rick_morty_app.presentation.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import com.example.rick_morty_app.data.repository.HomeRepository
+import com.example.rick_morty_app.presentation.mapper.mapEntityToModel
 import com.example.rick_morty_app.presentation.mapper.mapResponseToModel
 import com.example.rick_morty_app.presentation.model.CharacterModel
 import kotlinx.coroutines.CoroutineScope
@@ -20,6 +21,31 @@ class HomeViewModel : BaseViewModel() {
             loadingLiveData.postValue(true)
             val baseCharacterResponse = homeRepository.loadCharacterListNetwork()
             characterLiveData.postValue(mapResponseToModel(baseCharacterResponse.characterListResponse))
+        } catch (e: Exception) {
+            errorMessageLiveData.postValue(e.message)
+        } finally {
+            loadingLiveData.postValue(false)
+        }
+    }
+
+    fun getCharacterListDatabase() = CoroutineScope(Dispatchers.IO).launch {
+        try {
+            loadingLiveData.postValue(true)
+            val characterList = homeRepository.loadCharacterListDatabase()
+            characterLiveData.postValue(mapEntityToModel(characterList))
+        } catch (e: Exception) {
+            errorMessageLiveData.postValue(e.message)
+        } finally {
+            loadingLiveData.postValue(false)
+        }
+
+    }
+
+    fun setIsFavourite(characterModel: CharacterModel) = CoroutineScope(Dispatchers.IO).launch {
+        try {
+            loadingLiveData.postValue(true)
+            val characterList = homeRepository.setIsFavourite(characterModel)
+            characterLiveData.postValue(mapEntityToModel(characterList))
         } catch (e: Exception) {
             errorMessageLiveData.postValue(e.message)
         } finally {

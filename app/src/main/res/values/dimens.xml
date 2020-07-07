@@ -19,8 +19,9 @@
     <dimen name="text_size_title">34sp</dimen>
     <dimen name="text_size_options_item">22sp</dimen>
 
-    <dimen name="image_size_250dp">250dp</dimen>
+    <dimen name="image_size_small">36dp</dimen>
     <dimen name="image_size_default">48dp</dimen>
+    <dimen name="image_size_big">250dp</dimen>
     <dimen name="image_size_item_character">130dp</dimen>
 
     <dimen name="corner_default">16dp</dimen>

@@ -48,4 +48,6 @@
     <string name="arg_type">arg_type</string>
     <string name="arg_gender">arg_gender</string>
     <string name="arg_id">arg_id</string>
+
+    <string name="not_yet_implemented">Not yet implemented</string>
 </resources>

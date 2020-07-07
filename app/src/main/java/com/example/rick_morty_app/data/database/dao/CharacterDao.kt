@@ -22,5 +22,11 @@ interface CharacterDao {
     suspend fun getList(): List<CharacterEntity>
 
     @Query("SELECT * FROM TABLE_CHARACTER WHERE name = :name")
-    suspend fun getCharacter(name: String): CharacterEntity
+    suspend fun getCharacterByName(name: String): CharacterEntity
+
+    @Query("SELECT * FROM TABLE_CHARACTER WHERE id = :id")
+    suspend fun getCharacterById(id: Int): CharacterEntity
+
+    @Query("SELECT * FROM TABLE_CHARACTER WHERE isFavourite = :isFavourite")
+    suspend fun getFavouriteList(isFavourite: Boolean): List<CharacterEntity>
 }

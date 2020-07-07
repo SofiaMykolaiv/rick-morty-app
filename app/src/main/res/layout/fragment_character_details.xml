@@ -9,7 +9,7 @@
     <ImageView
         android:id="@+id/character_image"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/image_size_250dp"
+        android:layout_height="@dimen/image_size_big"
         tools:ignore="ContentDescription"
         tools:scaleType="centerInside"
         tools:src="@tools:sample/backgrounds/scenic" />

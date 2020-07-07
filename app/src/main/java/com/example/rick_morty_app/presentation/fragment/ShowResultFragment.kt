@@ -7,7 +7,6 @@ import com.example.rick_morty_app.R
 import com.example.rick_morty_app.presentation.adapter.CharacterAdapter
 import com.example.rick_morty_app.presentation.listener.CharacterClickListener
 import com.example.rick_morty_app.presentation.model.CharacterModel
-import com.example.rick_morty_app.presentation.viewmodel.SearchViewModel
 import com.example.rick_morty_app.presentation.viewmodel.ShowResultViewModel
 import com.example.rick_morty_app.utils.showSimpleErrorDialog
 import kotlinx.android.synthetic.main.fragment_show_result.*
@@ -18,10 +17,10 @@ class ShowResultFragment : BaseFragment<ShowResultViewModel>(), CharacterClickLi
     private lateinit var characterAdapter: CharacterAdapter
 
     private lateinit var name: String
-    private lateinit var status : String
-    private lateinit var species :String
-    private lateinit var type : String
-    private lateinit var gender : String
+    private lateinit var status: String
+    private lateinit var species: String
+    private lateinit var type: String
+    private lateinit var gender: String
 
     private val defaultValue = "default_value"
 
@@ -38,7 +37,7 @@ class ShowResultFragment : BaseFragment<ShowResultViewModel>(), CharacterClickLi
     }
 
     private fun initArguments() {
-        arguments?.let { arg->
+        arguments?.let { arg ->
             name = arg.getString(getString(R.string.arg_name), defaultValue)
             status = arg.getString(getString(R.string.arg_status), defaultValue)
             species = arg.getString(getString(R.string.arg_species), defaultValue)
@@ -70,6 +69,22 @@ class ShowResultFragment : BaseFragment<ShowResultViewModel>(), CharacterClickLi
     }
 
     override fun onItemClick(characterModel: CharacterModel) {
+        showSimpleErrorDialog(
+            context,
+            null,
+            context?.getString(R.string.not_yet_implemented),
+            null,
+            null
+        )
+    }
 
+    override fun onFavouriteClick(characterModel: CharacterModel) {
+        showSimpleErrorDialog(
+            context,
+            null,
+            context?.getString(R.string.not_yet_implemented),
+            null,
+            null
+        )
     }
 }

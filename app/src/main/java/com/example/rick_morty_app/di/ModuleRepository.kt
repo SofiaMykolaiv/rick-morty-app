@@ -9,4 +9,5 @@ val repositoryModule = module {
     single { LocationRepository() }
     single { EpisodeRepository() }
     single { CharacterDetailsRepository() }
+    single { FavouriteRepository() }
 }

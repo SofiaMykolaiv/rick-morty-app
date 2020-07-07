@@ -28,7 +28,7 @@ class HomeFragment : BaseFragment<HomeViewModel>(), CharacterClickListener {
     }
 
     private fun loadData() {
-        viewModel.getCharacterListNetwork()
+        viewModel.getCharacterListDatabase()
         swipe_refresh.setOnRefreshListener {
             swipe_refresh.isRefreshing = true
             viewModel.getCharacterListNetwork()
@@ -59,5 +59,9 @@ class HomeFragment : BaseFragment<HomeViewModel>(), CharacterClickListener {
         val arguments = Bundle()
         arguments.putInt(getString(R.string.arg_id), characterModel.id!!)
         navigateSafe(R.id.action_home_to_character_details_fragment, arguments)
+    }
+
+    override fun onFavouriteClick(characterModel: CharacterModel) {
+        viewModel.setIsFavourite(characterModel)
     }
 }
